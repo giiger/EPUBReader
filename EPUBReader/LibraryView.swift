@@ -1,8 +1,17 @@
+//
+//  LibraryView.swift
+//  EPUBReader
+//
+//  Created by Alex Giger on 10/17/25.
+//
+
+
 //  LibraryView.swift
 //  EPUBReader
 
 import SwiftUI
 import SwiftData
+internal import UniformTypeIdentifiers
 
 struct LibraryView: View {
     @Environment(\.modelContext) private var modelContext

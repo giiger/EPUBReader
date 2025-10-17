@@ -1,3 +1,11 @@
+//
+//  Book.swift
+//  EPUBReader
+//
+//  Created by Alex Giger on 10/17/25.
+//
+
+
 //  Book.swift
 //  EPUBReader
 
