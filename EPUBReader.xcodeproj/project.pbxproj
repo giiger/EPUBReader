@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FA38F9E42EA1C03A006282B0 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = FA38F9E32EA1C03A006282B0 /* ZIPFoundation */; };
+		FA38F9E72EA1C04E006282B0 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = FA38F9E62EA1C04E006282B0 /* SWXMLHash */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FA38F9D22EA1BF4E006282B0 /* EPUBReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPUBReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA38F9E72EA1C04E006282B0 /* SWXMLHash in Frameworks */,
+				FA38F9E42EA1C03A006282B0 /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = EPUBReader;
 			packageProductDependencies = (
+				FA38F9E32EA1C03A006282B0 /* ZIPFoundation */,
+				FA38F9E62EA1C04E006282B0 /* SWXMLHash */,
 			);
 			productName = EPUBReader;
 			productReference = FA38F9D22EA1BF4E006282B0 /* EPUBReader.app */;
@@ -94,6 +103,10 @@
 			);
 			mainGroup = FA38F9C92EA1BF4E006282B0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FA38F9E22EA1C03A006282B0 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				FA38F9E52EA1C04E006282B0 /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FA38F9D32EA1BF4E006282B0 /* Products */;
 			projectDirPath = "";
@@ -332,6 +345,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA38F9E22EA1C03A006282B0 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.20;
+			};
+		};
+		FA38F9E52EA1C04E006282B0 /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/drmohundro/SWXMLHash";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA38F9E32EA1C03A006282B0 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA38F9E22EA1C03A006282B0 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		FA38F9E62EA1C04E006282B0 /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA38F9E52EA1C04E006282B0 /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA38F9CA2EA1BF4E006282B0 /* Project object */;
 }
